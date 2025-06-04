@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Canalización Venosa Central - Preparación Previa</n  <style>
+    /* ------ Reset básico ------ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      padding: 20px;
+    }
+
+    /* ------ Contenedor principal ------ */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* ------ Título ------ */
+    .title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .title h1 {
+      font-size: 2.5rem;
+      color: #2e7d32; /* Verde similar a la imagen original */
+      margin-bottom: 10px;
+    }
+
+    .title span {
+      font-size: 1.2rem;
+      color: #2e2e2e;
+      font-weight: bold;
+    }
+
+    /* ------ Contenedor de pasos con Grid ------ */
+    .steps-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, auto);
+      gap: 20px;
+      align-items: start;
+    }
+
+    /* Colocación específica de cada paso */
+    #step-1 { grid-column: 1; grid-row: 1; }
+    #step-5 { grid-column: 2; grid-row: 1; }
+    #step-2 { grid-column: 1; grid-row: 2; }
+    #step-6 { grid-column: 2; grid-row: 2; }
+    #step-3 { grid-column: 1; grid-row: 3; }
+    #step-7 { grid-column: 2; grid-row: 3; }
+    #step-4 { grid-column: 1; grid-row: 4; }
+    /* La celda grid-row:4, columna 2 queda vacía *por pasos 1-7 */
+
+    /* ------ Cada paso ------ */
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    /* Círculo con número */
+    .step-number {
+      min-width: 40px;
+      min-height: 40px;
+      background-color: #2e7d32; /* Verde */
+      border-radius: 50%;
+      color: #ffffff;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* Icono */
+    .step-icon {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+    }
+
+    /* Texto descriptivo */
+    .step-text {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    /* Clase para destacar palabras en verde */
+    .highlight {
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    /* Adaptación para pantallas pequeñas */
+    @media (max-width: 700px) {
+      .steps-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .step {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Título -->
+    <div class="title">
+      <h1>CANALIZACIÓN VENOSA CENTRAL</h1>
+      <span>preparación previa</span>
+    </div>
+
+    <!-- Pasos en Grid -->
+    <div class="steps-container">
+      <!-- Paso 1 -->
+      <div class="step" id="step-1">
+        <div class="step-number">1</div>
+        <!-- Aquí reemplaza el src por la ruta de tu propio icono -->
+        <img src="ruta/a/icono-monitor.png" alt="Monitor" class="step-icon" />
+        <div class="step-text">
+          Posicionar al paciente de la manera más óptima y <span class="highlight">monitorizarlo.</span>
+        </div>
+      </div>
+
+      <!-- Paso 5 -->
+      <div class="step" id="step-5">
+        <div class="step-number">5</div>
+        <img src="ruta/a/icono-panos.png" alt="Pañales estériles" class="step-icon" />
+        <div class="step-text">
+          Extender los <span class="highlight">paños estériles</span> para cubrir toda la superficie.
+        </div>
+      </div>
+
+      <!-- Paso 2 -->
+      <div class="step" id="step-2">
+        <div class="step-number">2</div>
+        <img src="ruta/a/icono-sonda.png" alt="Ecógrafo" class="step-icon" />
+        <div class="step-text">
+          Colocar el <span class="highlight">ecógrafo</span> en línea con nuestra posición.
+        </div>
+      </div>
+
+      <!-- Paso 6 -->
+      <div class="step" id="step-6">
+        <div class="step-number">6</div>
+        <img src="ruta/a/icono-sonda-bolsa.png" alt="Sonda en bolsa estéril" class="step-icon" />
+        <div class="step-text">
+          Lubricar la sonda con gel y posteriormente <span class="highlight">introducirla en una bolsa estéril</span> ajustando las gomas del kit a la base de la sonda.
+        </div>
+      </div>
+
+      <!-- Paso 3 -->
+      <div class="step" id="step-3">
+        <div class="step-number">3</div>
+        <img src="ruta/a/icono-solution.png" alt="Solución antiséptica" class="step-icon" />
+        <div class="step-text">
+          <span class="highlight">Limpiar</span> con solución antiséptica la piel del paciente donde se incidirá.
+        </div>
+      </div>
+
+      <!-- Paso 7 -->
+      <div class="step" id="step-7">
+        <div class="step-number">7</div>
+        <img src="ruta/a/icono-adhesivo.png" alt="Adhesivo" class="step-icon" />
+        <div class="step-text">
+          Fijar con algún <span class="highlight">adhesivo</span> el cable de la sonda sobre el campo estéril para evitar caídas inadvertidas.
+        </div>
+      </div>
+
+      <!-- Paso 4 -->
+      <div class="step" id="step-4">
+        <div class="step-number">4</div>
+        <img src="ruta/a/icono-lavado-manos.png" alt="Lavado de manos" class="step-icon" />
+        <div class="step-text">
+          Realizar <span class="highlight">lavado de manos</span> y vestirse con <span class="highlight">bata y guantes estériles.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
